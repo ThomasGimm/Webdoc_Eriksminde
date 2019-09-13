@@ -1,0 +1,355 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+body {
+    font: 12px/18px; font-family: 'News Cycle', sans-serif;
+    /*XXX*/
+    background-color: #1c1c19
+}
+
+/* Alt der har noget med tekst at gøre
+...............*/
+h2 {
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    padding: 6%
+}
+
+h3,
+a {
+    color: white;
+    font-size: 5em;
+    text-align: center;
+    margin-bottom: 7%;
+
+}
+
+p {
+    color: burlywood;
+    z-index: 4;
+    font-size: 2em;
+}
+
+
+
+/* header #overrask {
+display: block;
+
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 85%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+
+
+} */
+
+
+/* @keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+
+    100% {
+        background-position: 500%;
+    }
+} */
+
+header a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    top: 60%;
+    color: orange;
+   height: 100%;
+   width: 100%;
+
+   background-color: rgba(0, 0, 0, 0.281);
+   animation: overskrift 2.5s linear infinite;
+}
+
+@keyframes overskrift {
+    50% {
+        transform: translateY(1%);
+    }
+
+    100% {
+       transform: translateY(0%);
+    }
+}
+
+/* Header
+.........................................................................*/
+header {
+
+    background-image: url("../img/faellesskab.jpg");
+    color: darkblue;
+    width: 100%;
+    padding: 20em 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 105vh;
+    background-color: #000;
+
+}
+
+
+/* Main
+.........................................................................*/
+main {
+    display: none;
+}
+
+#stemningsvideo {
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+/* Interview */
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex-item {
+    width: 40%
+}
+
+.flex-item video {
+    max-width: 100%;
+}
+
+/* streger
+...............*/
+
+#stregtop {
+    display: block;
+    margin-left: 15%;
+    margin-top: 4%;
+}
+
+#stregbund {
+    position: relative;
+    margin-top: 60%;
+    margin-left: 24%;
+}
+
+/* Sig ja
+...............*/
+#sigja {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#sigjatext {
+    padding: 0%;
+    font-size: 10em;
+    position: absolute;
+    top: 340%;
+    right: 74%;
+    z-index: 3;
+}
+
+#citatTegn1 {
+    font-size: 9em;
+    position: absolute;
+    top: 330%;
+    right: 35%;
+
+}
+
+#citatTegn2 {
+    font-size: 9em;
+    position: absolute;
+    top: 360%;
+    right: 5%;
+}
+
+#tekstJa {
+    width: 25%;
+    line-height: 1.6em;
+    position: absolute;
+    top: 330%;
+    right: 8%;
+}
+
+#cirkel {
+    display: block;
+    position: absolute;
+    width: 50%;
+    margin-left: 26%;
+    margin-top: 4%;
+}
+
+
+/* Valgfag
+...............*/
+
+
+.container .parallax {
+    width: 100%;
+    padding: 35rem 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+/* Audio Cirkler */
+
+#prikker {
+    width: 20%;
+    position: absolute;
+    left: 65%;
+    top: 470%;
+}
+
+#audio {
+    width: 5%;
+    position: absolute;
+    left: 73%;
+    top: 474%;
+    z-index: 2;
+}
+
+
+/* Parallax */
+.middle{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+
+.middle img {width: 100%;}
+.middle p {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    line-height: 1.5em; 
+    color: white;
+}
+
+.container .analog{
+    background-image: url("../img/valgfag_analog.jpg");
+}
+
+.container .elektroniskMusik {
+    background-image: url("../img/valgfag_elektronisk_musik.png");
+    margin-top: -60%;
+}
+
+/* Overrask dig selv på Eriksminde Efterskole */
+#overrask-overskrift h1, #overrask-overskrift h2{
+    text-align: center;
+    font-size: 3em;
+    color: white; 
+}
+
+#overrask-overskrift h1 {
+    margin-top: -4%; color: #d8c11d;
+}
+
+#citater p {
+    font-size: 1.1em; color: white;
+}
+#citat-1 {
+    position: relative;
+    left: 42%;
+    top: 87px
+}
+
+article #citater #citat-2 {
+    position: relative;
+    left: 3%;
+    top: -130px;
+    font-size: 1.4em;
+}
+
+article #citater #citat-3 {
+    position: relative;
+    left: 65%;
+    top: -110px; 
+    font-size: 1.4em;
+    
+}
+
+#citat-4 {
+    position: relative;
+    left: 65%;
+    top: -30px
+}
+
+article #citater #citat-5 {
+    position: relative;
+    left: 5%;
+    top: -30px;
+    font-size: 1.5em;
+}
+
+#citat-6 {
+    position: relative;
+    left: 15%;
+    top: -110px
+}
+
+#citat-7 {
+    position: relative;
+    left: 45%;
+    top: -230px
+}
+
+article #citater #citat-8 {
+    position: relative;
+    left: 70%;
+    top: -40px;
+    font-size: 1.4em;
+}
+
+
+/* Footer
+.........................................................................*/
+
+
+
+
+/* @media query! Skærme over XXXpx
+..................................................................*/

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Alt generelt
+............................................................. 
+-->
+
+<head>
+
+    <meta charset="utf-8" />
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+    <title>Webdoc - Eriksminde efterskole</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="keywords" content="XXX" />
+    <meta name="description" content="XXX" />
+    <link rel="icon" type="">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
+</head>
+
+
+
+<!-- Søg efter XXX, for at se rettelser ...............................................................
+-->
+
+
+
+<body onload="myFunction()">
+
+
+
+
+    <!-- Alt indhold i headeren
+............................................................. 
+-->
+    <header id="header">
+        <p id="overrask">Overrask dig selv på</p>
+        <a href="#stemningsvideo" onclick="velkommen()">Eriksminde</a>
+    </header>
+
+
+
+
+    <!-- Det unikke indhold på siden
+............................................................. 
+-->
+    <main id="main" ">
+
+        <video id="stemningsvideo">
+            <source src="video/Eriksminde.mp4" type="video/mp4">
+        </video>
+
+        <h3>MØD</h3>
+        <article class="flex-container">
+            <section class="flex-item" onclick="thoreFunction()">
+                <h2>Thore</h2>
+                <video id="interviewThore" onmouseover="playInterviewThore()" onmouseout="pauseInterviewThore()">
+                    <source src="video/vaelg-mig-thore-kort.mp4" type="video/mp4">
+                </video>
+            </section>
+            <section class="flex-item" onclick="franFunction()">
+                <h2>Francisca</h2>
+                <video id="interviewFran" onmouseover="playInterviewFran()" onmouseout="pauseInterviewFran()">
+                    <source src="video/vaelg-mig-francisca-kort.mp4" type="video/mp4">
+                </video>
+            </section>
+        </article>
+
+        <img id="stregtop" src="img/Streg_i_toppen.png" alt="streg">
+
+        <article id="sigja">
+            <h2 id="sigjatext">SIG JA</h2>
+            <p id="citatTegn1">"</p>
+            <p id="citatTegn2">"</p>
+            <p id="tekstJa">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+                exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea</p>
+            <img id="cirkel" src="img/cirkel.png" alt="cirkel">
+        </article>
+
+        <article>
+            <section id="cirkler">
+                <img id="stregbund" src="img/streg_i_bunden.png" alt="streg">
+                <audio id="myaudio">
+                    <source src="audio/elektroniskmusik.mp3" type="audio/mp3">
+                </audio>
+                <img onmouseover="PlaySound('myaudio')" onmouseout="StopSound('myaudio')" id="audio" src="img/audio.png"
+                    alt="lydfil"></img>
+                <img id="prikker" src="img/prikker.png" alt="#"><img>
+            </section>
+
+            <section class="container">
+
+                <div class="analog parallax" id="valgfag1">
+                </div>
+
+                <div class="middle">
+                    <p id="tekstValgfag">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <img src="img/broen.png" alt="¨grafisk-element">
+                </div>
+
+                <div class="elektroniskMusik parallax" id="valgfag2"></div>
+                </div>
+
+                <div class="between">
+                    <div class="title middle"></div>
+                </div>
+            </section>
+        </article>
+
+        <article>
+            <section id="overrask-overskrift">
+            <h2>Overrask dig selv på</h2>
+            <h1>Eriksminde Efterskole</h1>
+            </section>
+            <section id="citater">
+                <p id="citat-1">"Lorem ipsum dolor sit amet non proident"</p>
+                <p id="citat-2">"Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"</p>
+                <p id="citat-3">"Ut enim ad minim veniam, quis nostrud exercitation ullamco"</p>
+                <p id="citat-4">"Duis aute irure dolor in reprehenderit in voluptate"</p>
+                <p id="citat-5">"Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat"</p>
+                <p id="citat-6">"Cupidatat non proident, sunt in culpa"</p>
+                <p id="citat-7">"Qui officia deserunt mollit anim id est laborum"</p>
+                <p id="citat-8">"Qui officia deserunt mollit anim id est laborum"</p>
+            </section>
+        </article>
+    </main>
+
+
+
+
+    <!-- Alt indhold i footeren
+............................................................. 
+-->
+    <footer>
+
+    </footer>
+
+
+
+
+</body>
+
+</html>
