@@ -6,7 +6,10 @@
 //}
 
 //ct = document.getElementById("interviewThore").currentTime;
+window.onload = function () {
+  thoreFunction();
 
+}
 
 
 function velkommen() {
@@ -69,11 +72,15 @@ function interviewTime() {
 
 
   function playInterviewThore() {
+    document.getElementById("interviewFran").src = "video/vente-francisca.mp4";
+    document.getElementById("interviewFran").loop = true;
+    document.getElementById("interviewFran").play();
+
     document.getElementById("interviewThore").src = "video/interview_thore.mp4";
     document.getElementById("interviewThore").currentTime = videoTimerThore;
     document.getElementById("interviewThore").loop = false;
     document.getElementById("interviewThore").play();
-    
+
 
   }
 
@@ -82,6 +89,10 @@ function interviewTime() {
     if (videoTimerThore >= document.getElementById("interviewThore").duration) {
       videoTimerThore = 0;
     }
+
+    document.getElementById("interviewFran").src = "video/vaelg-mig-francisca-kort.mp4";
+    document.getElementById("interviewFran").loop = true;
+    document.getElementById("interviewFran").play();
 
     document.getElementById("interviewThore").src = "video/vaelg-mig-thore-kort.mp4";
     document.getElementById("interviewThore").loop = true;
@@ -98,11 +109,14 @@ function interviewTime() {
 
 
   function playInterviewFran() {
+    document.getElementById("interviewThore").src = "video/vente-thore.mp4"
+    document.getElementById("interviewThore").loop = true;
+    document.getElementById("interviewThore").play();
+
     document.getElementById("interviewFran").src = "video/interview-francisca.mp4";
     document.getElementById("interviewFran").currentTime = videoTimerFran;
     document.getElementById("interviewFran").loop = false;
     document.getElementById("interviewFran").play();
-    
   }
 
   function pauseInterviewFran() {
@@ -110,6 +124,10 @@ function interviewTime() {
     if (videoTimerFran >= document.getElementById("interviewFran").duration) {
       videoTimerFran = 0;
     }
+    document.getElementById("interviewThore").src = "video/vaelg-mig-thore-kort.mp4"
+    document.getElementById("interviewThore").loop = true;
+    document.getElementById("interviewThore").play();
+
     document.getElementById("interviewFran").src = "video/vaelg-mig-francisca-kort.mp4";
     document.getElementById("interviewFran").loop = true;
     document.getElementById("interviewFran").play();
@@ -124,11 +142,11 @@ function thoreFunction() {
   // Ændre teksten i "sig ja" paragraphen
   document.getElementById("tekstJa").innerHTML = "Jeg siger ja til alt!";
   // Ændre teksten i valgfags paragraphen
-  document.getElementById("tekstValgfag").innerHTML = "Mit navn er Thore og jeg spiller elektronisk musik";
+  document.getElementById("tekstValgfag").innerHTML = "&quot Mit navn er Thore og jeg spiller elektronisk musik. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. &quot";
   // Ændre musik, alt efter valgfag
   document.getElementById('myaudio').src = 'audio/elektroniskmusik.mp3';
   // Skifte første valgfagsbillede
-  document.getElementById("valgfag1").style.backgroundImage = "url(img/valgfag_analog.png)";
+  document.getElementById("valgfag1").style.backgroundImage = "url(img/valgfag_analog.jpg)";
   // Skifte andet valgfagsbillede
   document.getElementById("valgfag2").style.backgroundImage = "url(img/valgfag_elektronisk_musik.png)";
 }
@@ -155,5 +173,6 @@ function StopSound(myaudio) {
 }
 
 function myFunction() {
-  alert("Book en tid");
+  // alert("Book en tid");
+
 }
