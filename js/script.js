@@ -1,11 +1,3 @@
-// Alt det her er noget Maja har gang i!
-// Afsnittet handler om at skifte interviewvideo og få den til at pause
-
-//function myFunction() {
-//alert("Klar til at høre om Eriksminde?");
-//}
-
-//ct = document.getElementById("interviewThore").currentTime;
 window.onload = function () {
   thoreFunction();
 
@@ -47,11 +39,6 @@ scrollFran = function () {
 
 
 window.onscroll = function () {
-  /* if(document.getElementById("interviewThore").getBoundingClientRect().bottom < -20 || document.getElementById("interviewThore").getBoundingClientRect().top > 850)
-      document.getElementById("interviewThore").pause();
-    else
-    document.getElementById("interviewThore").play();
-    document.getElementById("interviewThore").loop = true; */
   scrollStemning();
   scrollThore();
   scrollFran();
