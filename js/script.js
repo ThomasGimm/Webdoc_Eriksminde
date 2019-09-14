@@ -55,12 +55,12 @@ window.onscroll = function () {
 
 }
 
-function interviewTime() {
+ function interviewTime() {
   var curTime = document.getElementById("interviewThore").currentTime;
   var x = 0;
   curTime = x.value;
   document.getElementById("interviewThore").addEventListener("mouseover", playInterviewThore);
-}
+} 
 
 
 function playInterviewThore() {
