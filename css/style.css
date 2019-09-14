@@ -16,7 +16,7 @@ summary {
 body {
     font: 12px/18px; font-family: 'News Cycle', sans-serif;
     /*XXX*/
-    background-color: #1c1c19
+    background-color: #1c1c19;
 }
 
 /* Alt der har noget med tekst at gøre
@@ -134,7 +134,7 @@ main {
 }
 
 #stemningsvideo {
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 10%;
 }
 
@@ -152,6 +152,7 @@ main {
 
 .flex-item video {
     max-width: 100%;
+
 }
 
 /* streger
