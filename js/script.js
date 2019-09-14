@@ -55,47 +55,67 @@ window.onscroll = function () {
 
 }
 
- function interviewTime() {
+function interviewTime() {
   var curTime = document.getElementById("interviewThore").currentTime;
-  var x = 0;
+
   curTime = x.value;
   document.getElementById("interviewThore").addEventListener("mouseover", playInterviewThore);
-} 
-
-
-function playInterviewThore() {
-  document.getElementById("interviewThore").src = "video/interview_thore.mp4";
-  //document.getElementById("interviewThore").currentTime = 5;
-  document.getElementById("interviewThore").play();
-
-
-
-
-}
-
-function pauseInterviewThore() {
-  //alert(document.getElementById("interviewThore").currentTime); 
-
-  // https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_av_prop_currenttime
-  document.getElementById("interviewThore").src = "video/vaelg-mig-thore-kort.mp4";
-  document.getElementById("interviewThore").play();
-
-
 }
 
 
-function playInterviewFran() {
-  document.getElementById("interviewFran").src = "video/interview-francisca.mp4";
-  document.getElementById("interviewFran").play();
+//THORE INTERVIEW
+{
+  var videoTimerThore = 0;
 
+
+  function playInterviewThore() {
+    document.getElementById("interviewThore").src = "video/interview_thore.mp4";
+    document.getElementById("interviewThore").currentTime = videoTimerThore;
+    document.getElementById("interviewThore").loop = false;
+    document.getElementById("interviewThore").play();
+    
+
+  }
+
+  function pauseInterviewThore() {
+    videoTimerThore = document.getElementById("interviewThore").currentTime;
+    if (videoTimerThore >= document.getElementById("interviewThore").duration) {
+      videoTimerThore = 0;
+    }
+
+    document.getElementById("interviewThore").src = "video/vaelg-mig-thore-kort.mp4";
+    document.getElementById("interviewThore").loop = true;
+    document.getElementById("interviewThore").play();
+
+
+  }
 }
 
-function pauseInterviewFran() {
-  //alert(document.getElementById("interviewThore").currentTime);
-  // https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_av_prop_currenttime
-  document.getElementById("interviewFran").src = "video/vaelg-mig-francisca-kort.mp4";
-  document.getElementById("interviewFran").play();
 
+//FRAN INTERVIEW
+{
+  var videoTimerFran = 0;
+
+
+  function playInterviewFran() {
+    document.getElementById("interviewFran").src = "video/interview-francisca.mp4";
+    document.getElementById("interviewFran").currentTime = videoTimerFran;
+    document.getElementById("interviewFran").loop = false;
+    document.getElementById("interviewFran").play();
+    
+  }
+
+  function pauseInterviewFran() {
+    videoTimerFran = document.getElementById("interviewFran").currentTime;
+    if (videoTimerFran >= document.getElementById("interviewFran").duration) {
+      videoTimerFran = 0;
+    }
+    document.getElementById("interviewFran").src = "video/vaelg-mig-francisca-kort.mp4";
+    document.getElementById("interviewFran").loop = true;
+    document.getElementById("interviewFran").play();
+
+
+  }
 }
 
 // SKift af indhold ved klik på person
