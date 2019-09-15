@@ -40,15 +40,22 @@ scrollFran = function () {
   document.getElementById("interviewFran").loop = true;
 }
 
+function navneskilt() {
+  if (document.getElementById("interviewThore").getBoundingClientRect().bottom < 50) 
+    document.getElementById("navneskilt").style.display = "block";
+    else
+    document.getElementById("navneskilt").style.display = "none";
+  
+}
 
 // Funktion som starter andre scroll funktioner, som gør at videoerne starter
 window.onscroll = function () {
   scrollStemning();
   scrollThore();
   scrollFran();
-
+navneskilt();
 }
- 
+
 
 
 //THORE INTERVIEW
@@ -56,7 +63,7 @@ window.onscroll = function () {
   // Variabel som gemmer tiden på videoen når musen fjernes fra interviewet
   var videoTimerThore = 0;
 
-// Funktion som sker når man hover over Thores video
+  // Funktion som sker når man hover over Thores video
   function playInterviewThore() {
     // Frans video udskiftes til ventevideoen
     document.getElementById("interviewFran").src = "video/vente-francisca.mp4";
@@ -96,9 +103,9 @@ window.onscroll = function () {
     // Sætte Frans vælg mig video til at afspille
     document.getElementById("interviewFran").play();
 
-// Ændre Thores video tilbage til vælg mig videoen fra interviewet
+    // Ændre Thores video tilbage til vælg mig videoen fra interviewet
     document.getElementById("interviewThore").src = "video/vaelg-mig-thore-kort.mp4";
-// Sætte Thores vælg mig video til at loope
+    // Sætte Thores vælg mig video til at loope
     document.getElementById("interviewThore").loop = true;
     // Sætte Thores vælg mig video til at loope
     document.getElementById("interviewThore").play();
@@ -145,6 +152,8 @@ window.onscroll = function () {
 // SKift af indhold ved klik på person (Thore)
 
 function thoreFunction() {
+ // Bestemmer navnet som følger ned langs siden
+  document.getElementById("navneskilt").innerHTML = "Thore";
   // Ændre teksten i "sig ja" paragraphen
   document.getElementById("tekstJa").innerHTML = "Jeg siger ja til alt!";
   // Ændre teksten i valgfags paragraphen
@@ -166,6 +175,7 @@ function thoreFunction() {
 // Se kommentarer for Thore
 
 function franFunction() {
+  document.getElementById("navneskilt").innerHTML = "Francisca";
   document.getElementById("tekstJa").innerHTML = "Jeg Ikke ja til noget";
   document.getElementById("tekstValgfag").innerHTML = "Mit navn er Francisca og jeg siger ikke ja";
   document.getElementById('myaudio').src = 'audio/eriksminde_lyd.mp3';
@@ -175,6 +185,8 @@ function franFunction() {
   document.getElementById("interviewThore").style.outline = "none";
   document.getElementById("interviewFran").style.outline = "solid 1.5em #ffa50099";
 }
+
+
 
 // Lyde til valgfag
 

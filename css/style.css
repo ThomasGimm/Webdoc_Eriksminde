@@ -43,6 +43,14 @@ p {
     font-size: 2em;
 }
 
+#navneskilt {display: none;
+    position: fixed;
+    top: 20%;
+    left: 1em;
+background-color: #d8c11d;
+padding: .2em 1em;
+z-index: 2;
+}
 
 
 header #overrask {
@@ -107,7 +115,7 @@ header a {
 header {
 
     background-image: url("../img/faellesskab.jpg");
-    color: darkblue;
+    
     width: 100%;
     padding: 20em 0;
     position: relative;
@@ -122,7 +130,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 105vh;
-    background-color: #000;
+  /*  background-color: rgba(0, 0, 0, 0.881);*/
 
 }
 
@@ -176,6 +184,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    
 }
 
 #sigjatext {
