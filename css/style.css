@@ -16,7 +16,7 @@ summary {
 body {
     font: 12px/18px; font-family: 'News Cycle', sans-serif;
     /*XXX*/
-    background-color: #1c1c19
+    background-color: #1c1c19;
 }
 
 /* Alt der har noget med tekst at gøre
@@ -43,10 +43,21 @@ p {
     font-size: 2em;
 }
 
+#navneskilt {display: none;
+    position: fixed;
+    top: 20%;
+    left: 1em;
+background-color: #d8c11d;
+padding: .2em 1em;
+z-index: 2;
+}
 
 
-/* header #overrask {
-display: block;
+header #overrask {
+    padding: .4em 3em;
+    background-color: rgba(255, 165, 0, 0.6);
+    color: #000;
+/*display: block;
 
     position: relative;
     font-family: sans-serif;
@@ -61,8 +72,8 @@ display: block;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
 
-
-} */
+*/
+} 
 
 
 /* @keyframes animate {
@@ -104,7 +115,7 @@ header a {
 header {
 
     background-image: url("../img/faellesskab.jpg");
-    color: darkblue;
+    
     width: 100%;
     padding: 20em 0;
     position: relative;
@@ -119,7 +130,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 105vh;
-    background-color: #000;
+  /*  background-color: rgba(0, 0, 0, 0.881);*/
 
 }
 
@@ -131,7 +142,7 @@ main {
 }
 
 #stemningsvideo {
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 10%;
 }
 
@@ -149,6 +160,7 @@ main {
 
 .flex-item video {
     max-width: 100%;
+
 }
 
 /* streger
@@ -172,6 +184,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    
 }
 
 #sigjatext {
