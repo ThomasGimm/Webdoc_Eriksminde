@@ -21,6 +21,12 @@ summary {
     font-weight: 100;
 }
 
+@font-face {
+    font-family: 'street';
+    src: url(../fonts/street.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
 
 
 body {
@@ -213,8 +219,8 @@ main {
     position: absolute;
     right: 74%;
     z-index: 3;
-    margin-top: 20%;
-    
+    font-family: 'street';
+    font-weight: 100;
 }
 
 #tekstJa {
@@ -230,7 +236,7 @@ main {
     display: block;
     position: absolute;
     width: 50%;
-    margin-left: 26%;
+    margin-left: 25%;
 }
 
 
