@@ -161,7 +161,7 @@ function thoreFunction() {
   // Ændre teksten i "sig ja" paragraphen
   document.getElementById("tekstJa").innerHTML = "<bold>&quot</bold> Jeg siger ja til alt! <bold>&quot</bold>";
   // Ændre teksten i valgfags paragraphen
-  document.getElementById("tekstValgfag").innerHTML = "<bold>&quot</bold> Mit navn er Thore og jeg spiller elektronisk musik. Lo mollit anim id est laborum. <bold>&quot</bold>";
+  document.getElementById("tekstValgfag").innerHTML = "<bold>&quot</bold> Elektronisk musik. <bold>&quot</bold>";
   // Ændre musik, alt efter valgfag
   document.getElementById('myaudio').src = 'audio/elektroniskmusik.mp3';
   // Skifte første valgfagsbillede
