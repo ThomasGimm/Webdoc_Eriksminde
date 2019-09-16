@@ -187,14 +187,15 @@ main {
 
 #stregtop {
     display: block;
-    margin-left: 15%;
+    width: 90%;
+    margin-left: 5%;
     margin-top: 4%;
 }
 
 #stregbund {
     position: relative;
-    margin-top: 60%;
-    margin-left: 24%;
+    width: 100%;
+    margin-top: 55%;
 }
 
 /* Sig ja
@@ -203,39 +204,26 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
+    position: relative;
 }
 
 #sigjatext {
     padding: 0%;
     font-size: 10em;
     position: absolute;
-    top: 340%;
     right: 74%;
     z-index: 3;
-}
-
-#citatTegn1 {
-    font-size: 9em;
-    position: absolute;
-    top: 330%;
-    right: 35%;
-
-}
-
-#citatTegn2 {
-    font-size: 9em;
-    position: absolute;
-    top: 360%;
-    right: 5%;
+    margin-top: 20%;
+    
 }
 
 #tekstJa {
     width: 25%;
     line-height: 1.6em;
     position: absolute;
-    top: 330%;
+    margin-top: 30%;
     right: 8%;
+    
 }
 
 #cirkel {
@@ -243,7 +231,6 @@ main {
     position: absolute;
     width: 50%;
     margin-left: 26%;
-    margin-top: 4%;
 }
 
 
@@ -264,18 +251,22 @@ main {
 
 /* Audio Cirkler */
 
+#cirkler {
+    position: relative;
+}
+
 #prikker {
     width: 20%;
     position: absolute;
+    bottom: 10%;
     left: 65%;
-    top: 470%;
 }
 
 #audio {
     width: 5%;
     position: absolute;
     left: 73%;
-    top: 474%;
+    bottom: 17.5%;
     z-index: 2;
 }
 
@@ -318,6 +309,10 @@ main {
     text-align: center;
     font-size: 3em;
     color: white;
+}
+
+#citater {
+    width: 100%;
 }
 
 #overrask-overskrift h1 {
