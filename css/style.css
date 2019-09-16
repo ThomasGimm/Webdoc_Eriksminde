@@ -75,7 +75,7 @@ p {
     background-color: #d8c11d;
     color: #000;
     padding: .2em 1em;
-    z-index: 2;
+    z-index: 5;
     color: #1c1c19;
 }
 
@@ -229,9 +229,19 @@ main {
     position: absolute;
     font-family: 'street';
     right: 60%;
-    z-index: 3;
+    z-index: 6;
     margin-top: 16%;
+    animation: ja 2.5s linear infinite;
 
+}
+@keyframes ja {
+    50% {
+        transform: translateY(2%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 #tekstJa {
@@ -276,10 +286,21 @@ main {
 #valgfagtekst {
     position: absolute;
     bottom: 35%;
-    left: 70%;;
+    left: 70%;
     font-size: 6em;
     color: #D8C11D;
     font-family: 'street';
+    animation: fag 2.5s linear infinite;
+}
+
+@keyframes fag {
+    50% {
+        transform: translateY(10%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 #prikker {
@@ -309,6 +330,7 @@ main {
 .container {
     position: relative;
 }
+
 .container img {
     z-index: 2;
 }
@@ -323,7 +345,8 @@ main {
     margin-top: -12em;
 }
 
-.middle img, .container img {
+.middle img,
+.container img {
     width: 100%;
 }
 
@@ -368,52 +391,116 @@ main {
 }
 
 #citater section p {
-    font-size: 1.1em;
+    font-size: 1.3em;
     color: white;
     display: inline;
     position: absolute;
+
 }
 
 #citat-1 {
     top: 6%;
     left: 30%;
+    animation: puls1 2.5s linear infinite;
 }
 
 #citat-2 {
     top: 60%;
-    left: 2%;
+    left: 4%;
+    animation: puls3 4s linear infinite;
 }
 
 #citat-3 {
     top: 10%;
     left: 55%;
+    animation: puls2 4s linear infinite;
 }
 
 #citat-4 {
     top: 40%;
     left: 70%;
+    animation: puls1 2.5s linear infinite;
 }
 
 #citat-5 {
     top: 85%;
     left: 54%;
+    animation: puls3 3s linear infinite;
 }
 
 #citat-6 {
     top: 30%;
     left: 7%;
+    animation: puls3 2.5s linear infinite;
 }
 
 #citat-7 {
     top: 64%;
     left: 60%;
+    animation: puls2 4s linear infinite;
 }
 
 #citat-8 {
     top: 78%;
     left: 20%;
+    animation: puls1 2.5s linear infinite;
 }
 
+
+@keyframes puls1 {
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+@keyframes puls2 {
+    0% {
+        transform: scale(1.1)
+    }
+
+    25% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    75% {
+        transform: scale(1.2)
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes puls3 {
+    0% {
+        transform: scale(1.2)
+    }
+
+    25% {
+        transform: scale(1.1)
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.1)
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
 
 /* Footer
 .........................................................................*/
