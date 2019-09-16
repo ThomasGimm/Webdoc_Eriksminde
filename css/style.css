@@ -207,6 +207,8 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    font-family: 'street';
+    font-weight: 100;
     
 
 }
