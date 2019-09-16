@@ -122,6 +122,7 @@ navneskilt();
 
 
   function playInterviewFran() {
+    
     document.getElementById("interviewThore").src = "video/vente-thore.mp4"
     document.getElementById("interviewThore").loop = true;
     document.getElementById("interviewThore").play();
@@ -130,12 +131,15 @@ navneskilt();
     document.getElementById("interviewFran").currentTime = videoTimerFran;
     document.getElementById("interviewFran").loop = false;
     document.getElementById("interviewFran").play();
+
+    
   }
 
   function pauseInterviewFran() {
     videoTimerFran = document.getElementById("interviewFran").currentTime;
     if (videoTimerFran >= document.getElementById("interviewFran").duration) {
       videoTimerFran = 0;
+     
     }
     document.getElementById("interviewThore").src = "video/vaelg-mig-thore-kort.mp4"
     document.getElementById("interviewThore").loop = true;
