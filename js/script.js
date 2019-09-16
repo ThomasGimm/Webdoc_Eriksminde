@@ -159,9 +159,9 @@ function thoreFunction() {
  // Bestemmer navnet som følger ned langs siden
   document.getElementById("navneskilt").innerHTML = "Thore";
   // Ændre teksten i "sig ja" paragraphen
-  document.getElementById("tekstJa").innerHTML = "Jeg siger ja til alt!";
+  document.getElementById("tekstJa").innerHTML = "<bold>&quot</bold> Jeg siger ja til alt! <bold>&quot</bold>";
   // Ændre teksten i valgfags paragraphen
-  document.getElementById("tekstValgfag").innerHTML = "&quot Mit navn er Thore og jeg spiller elektronisk musik. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. &quot";
+  document.getElementById("tekstValgfag").innerHTML = "<bold>&quot</bold> Mit navn er Thore og jeg spiller elektronisk musik. Lo mollit anim id est laborum. <bold>&quot</bold>";
   // Ændre musik, alt efter valgfag
   document.getElementById('myaudio').src = 'audio/elektroniskmusik.mp3';
   // Skifte første valgfagsbillede
