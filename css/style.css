@@ -21,6 +21,12 @@ summary {
     font-weight: 100;
 }
 
+@font-face {
+    font-family: 'street';
+    src: url(../fonts/street.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
 
 
 body {
@@ -201,6 +207,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    
 
 }
 
@@ -211,6 +218,8 @@ main {
     top: 340%;
     right: 74%;
     z-index: 3;
+    font-family: 'street';
+    font-weight: 100;
 }
 
 #citatTegn1 {
