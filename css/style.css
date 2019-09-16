@@ -14,7 +14,8 @@ summary {
 }
 
 body {
-    font: 12px/18px; font-family: 'News Cycle', sans-serif;
+    font: 12px/18px;
+    font-family: 'News Cycle', sans-serif;
     /*XXX*/
     background-color: #1c1c19;
 }
@@ -43,7 +44,8 @@ p {
     font-size: 2em;
 }
 
-#navneskilt {display: none;
+#navneskilt {
+    display: none;
     position: fixed;
     top: 20%;
     left: 1em;
@@ -57,7 +59,7 @@ header #overrask {
     padding: .4em 3em;
     background-color: rgba(216, 193, 29, 0.6);
     color: #000;
-/*display: block;
+    /*display: block;
 
     position: relative;
     font-family: sans-serif;
@@ -73,7 +75,7 @@ header #overrask {
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
 
 */
-} 
+}
 
 
 /* @keyframes animate {
@@ -96,8 +98,9 @@ header a {
    height: 100%;
    width: 100%;
 
-   background-color: rgba(0, 0, 0, 0.281);
-   animation: overskrift 2.5s linear infinite;
+
+    background-color: rgba(0, 0, 0, 0.281);
+    animation: overskrift 2.5s linear infinite;
 }
 
 @keyframes overskrift {
@@ -106,7 +109,7 @@ header a {
     }
 
     100% {
-       transform: translateY(0%);
+        transform: translateY(0%);
     }
 }
 
@@ -115,7 +118,7 @@ header a {
 header {
 
     background-image: url("../img/faellesskab.jpg");
-    
+
     width: 100%;
     padding: 20em 0;
     position: relative;
@@ -130,7 +133,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 105vh;
-  /*  background-color: rgba(0, 0, 0, 0.881);*/
+    /*  background-color: rgba(0, 0, 0, 0.881);*/
 
 }
 
@@ -168,14 +171,15 @@ main {
 
 #stregtop {
     display: block;
-    margin-left: 15%;
+    width: 90%;
+    margin-left: 5%;
     margin-top: 4%;
 }
 
 #stregbund {
     position: relative;
-    margin-top: 60%;
-    margin-left: 24%;
+    width: 100%;
+    margin-top: 55%;
 }
 
 /* Sig ja
@@ -184,39 +188,26 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+    position: relative;
 }
 
 #sigjatext {
     padding: 0%;
     font-size: 10em;
     position: absolute;
-    top: 340%;
     right: 74%;
     z-index: 3;
-}
-
-#citatTegn1 {
-    font-size: 9em;
-    position: absolute;
-    top: 330%;
-    right: 35%;
-
-}
-
-#citatTegn2 {
-    font-size: 9em;
-    position: absolute;
-    top: 360%;
-    right: 5%;
+    margin-top: 20%;
+    
 }
 
 #tekstJa {
     width: 25%;
     line-height: 1.6em;
     position: absolute;
-    top: 330%;
+    margin-top: 30%;
     right: 8%;
+    
 }
 
 #cirkel {
@@ -224,7 +215,6 @@ main {
     position: absolute;
     width: 50%;
     margin-left: 26%;
-    margin-top: 4%;
 }
 
 
@@ -245,24 +235,28 @@ main {
 
 /* Audio Cirkler */
 
+#cirkler {
+    position: relative;
+}
+
 #prikker {
     width: 20%;
     position: absolute;
+    bottom: 10%;
     left: 65%;
-    top: 470%;
 }
 
 #audio {
     width: 5%;
     position: absolute;
     left: 73%;
-    top: 474%;
+    bottom: 17.5%;
     z-index: 2;
 }
 
 
 /* Parallax */
-.middle{
+.middle {
     position: relative;
     top: 50%;
     left: 50%;
@@ -271,17 +265,20 @@ main {
     text-align: center;
 }
 
-.middle img {width: 100%;}
+.middle img {
+    width: 100%;
+}
+
 .middle p {
     position: absolute;
     top: 43%;
     left: 50%;
-    transform: translate(-50%, -50%); 
-    line-height: 1.5em; 
+    transform: translate(-50%, -50%);
+    line-height: 1.5em;
     color: white;
 }
 
-.container .analog{
+.container .analog {
     background-image: url("../img/valgfag_analog.jpg");
 }
 
@@ -291,19 +288,27 @@ main {
 }
 
 /* Overrask dig selv på Eriksminde Efterskole */
-#overrask-overskrift h1, #overrask-overskrift h2{
+#overrask-overskrift h1,
+#overrask-overskrift h2 {
     text-align: center;
     font-size: 3em;
-    color: white; 
+    color: white;
+}
+
+#citater {
+    width: 100%;
 }
 
 #overrask-overskrift h1 {
-    margin-top: -4%; color: #d8c11d;
+    margin-top: -4%;
+    color: #d8c11d;
 }
 
 #citater p {
-    font-size: 1.1em; color: white;
+    font-size: 1.1em;
+    color: white;
 }
+
 #citat-1 {
     position: relative;
     left: 42%;
@@ -320,9 +325,9 @@ article #citater #citat-2 {
 article #citater #citat-3 {
     position: relative;
     left: 65%;
-    top: -110px; 
+    top: -110px;
     font-size: 1.4em;
-    
+
 }
 
 #citat-4 {
