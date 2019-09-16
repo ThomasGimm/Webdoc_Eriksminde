@@ -170,7 +170,7 @@ function thoreFunction() {
   document.getElementById("valgfag2").style.backgroundImage = "url(img/valgfag_elektronisk_musik.png)";
 
   // Give vælg mig videoen en ramme (outline) når den er valgt (ved klik)
-  document.getElementById("interviewThore").style.outline = "solid 1.5em #ffa50099";
+  document.getElementById("interviewThore").style.outline = "solid 1.5em #D8C11D";
   // Fjerne rammen fra Frans video
   document.getElementById("interviewFran").style.outline = "none";
 }
@@ -187,7 +187,7 @@ function franFunction() {
   document.getElementById("valgfag2").style.backgroundImage = "url(img/valgfag_sts.png)";
 
   document.getElementById("interviewThore").style.outline = "none";
-  document.getElementById("interviewFran").style.outline = "solid 1.5em #ffa50099";
+  document.getElementById("interviewFran").style.outline = "solid 1.5em #D8C11D";
 }
 
 
