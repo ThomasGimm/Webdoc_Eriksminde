@@ -157,7 +157,7 @@ navneskilt();
 
 function thoreFunction() {
  // Bestemmer navnet som følger ned langs siden
-  document.getElementById("navneskilt").innerHTML = "Thores <br> historie";
+  document.getElementById("navneskilt").innerHTML = "Tores <br> Historie";
   // Ændre teksten i "sig ja" paragraphen
   document.getElementById("tekstJa").innerHTML = "<b>&quot</b> Jeg er vant til at sige ja til alle de ting der bare sådan kommer, men en af de hårdere ting, som jeg ikke lige helt havde tænkt over, er jo at man skal være på hele tiden.  <b>&quot</b>";
   // Ændre teksten i valgfags paragraphen
@@ -173,13 +173,15 @@ function thoreFunction() {
   document.getElementById("interviewThore").style.outline = "solid 1.5em #D8C11D";
   // Fjerne rammen fra Frans video
   document.getElementById("interviewFran").style.outline = "none";
+  document.getElementById("stregtop").style.display = "block";
+  document.getElementById("stregtopfran").style.display = "none";
 }
 
 // SKift af indhold ved klik på person (Francisca)
 // Se kommentarer for Thore
 
 function franFunction() {
-  document.getElementById("navneskilt").innerHTML = "Franciscas <br> historie";
+  document.getElementById("navneskilt").innerHTML = "Franciscas <br> Historie";
   document.getElementById("tekstJa").innerHTML = "<b>&quot</b> Jeg gik også på efterskole sidste år, men jeg synes det har været nemmere med det sociale i år. Nemmere bare at gå hen og snakke med folk, i stedet for at være lidt bange for det. <b>&quot</b>";
   document.getElementById("tekstValgfag").innerHTML = "<b>&quot</b> Jeg kendte ikke rigtig valgfagene før jeg kom, men det var ret svært at vælge, fordi der var ret mange gode valgfag. Jeg synes udeliv er ret fedt, hvor vi lærer at tænde bål selv, tager ned og ror og sådan noget. Det er også fedt med afrikansk dans og trommer på SDS, det er noget jeg godt kan lide, så det er sjovt! <b>&quot</b>";
   document.getElementById('myaudio').src = 'audio/eriksminde_lyd.mp3';
@@ -188,6 +190,8 @@ function franFunction() {
 
   document.getElementById("interviewThore").style.outline = "none";
   document.getElementById("interviewFran").style.outline = "solid 1.5em #D8C11D";
+  document.getElementById("stregtop").style.display = "none";
+  document.getElementById("stregtopfran").style.display = "block";
 }
 
 
