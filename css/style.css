@@ -21,12 +21,6 @@ summary {
     font-weight: 100;
 }
 
-@font-face {
-    font-family: 'street';
-    src: url(../fonts/street.ttf);
-    font-style: normal;
-    font-weight: 100;
-}
 
 
 body {
@@ -219,8 +213,8 @@ main {
     position: absolute;
     right: 74%;
     z-index: 3;
-    font-family: 'street';
-    font-weight: 100;
+    margin-top: 20%;
+    
 }
 
 #tekstJa {
@@ -236,7 +230,7 @@ main {
     display: block;
     position: absolute;
     width: 50%;
-    margin-left: 25%;
+    margin-left: 26%;
 }
 
 
@@ -348,8 +342,8 @@ main {
   }
 
 #citat-3 {
-    top: 15%;
-    left: 50%;
+    top: 10%;
+    left: 55%;
   }
 
   #citat-4 {
@@ -359,17 +353,22 @@ main {
 
   #citat-5 {
     top: 85%;
-    left: 40%;
+    left: 54%;
   }
 
   #citat-6 {
     top: 30%;
-    left: 10%;
+    left: 7%;
   }
 
   #citat-7 {
-    top: 70%;
+    top: 64%;
     left: 60%;
+  }
+
+  #citat-8 {
+    top: 78%;
+    left: 20%;
   }
 
 
