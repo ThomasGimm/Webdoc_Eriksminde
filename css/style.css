@@ -75,7 +75,7 @@ p {
     background-color: #d8c11d;
     color: #000;
     padding: .2em 1em;
-    z-index: 2;
+    z-index: 5;
 }
 
 
@@ -314,12 +314,12 @@ main {
 
 #sortfigurtop {
     position: absolute;
-    margin-top: 40%;
+    top: -1%;
 }
 
-#sortfigurtop {
+#sortfigurbund {
     position: absolute;
-    margin-top: -12em;
+    bottom: 0.00000000000000000000001%;
 }
 
 .middle img, .container img {
