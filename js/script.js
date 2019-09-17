@@ -41,11 +41,11 @@ scrollFran = function () {
 }
 
 function navneskilt() {
-  if (document.getElementById("interviewThore").getBoundingClientRect().bottom < 50) 
+  if (document.getElementById("interviewThore").getBoundingClientRect().bottom < 50)
     document.getElementById("navneskilt").style.display = "block";
-    else
+  else
     document.getElementById("navneskilt").style.display = "none";
-  
+
 }
 
 // Funktion som starter andre scroll funktioner, som gør at videoerne starter
@@ -53,7 +53,8 @@ window.onscroll = function () {
   scrollStemning();
   scrollThore();
   scrollFran();
-navneskilt();
+  navneskilt();
+  
 }
 
 
@@ -122,7 +123,7 @@ navneskilt();
 
 
   function playInterviewFran() {
-    
+
     document.getElementById("interviewThore").src = "video/vente-thore.mp4"
     document.getElementById("interviewThore").loop = true;
     document.getElementById("interviewThore").play();
@@ -132,14 +133,14 @@ navneskilt();
     document.getElementById("interviewFran").loop = false;
     document.getElementById("interviewFran").play();
 
-    
+
   }
 
   function pauseInterviewFran() {
     videoTimerFran = document.getElementById("interviewFran").currentTime;
     if (videoTimerFran >= document.getElementById("interviewFran").duration) {
       videoTimerFran = 0;
-     
+
     }
     document.getElementById("interviewThore").src = "video/vaelg-mig-thore-kort.mp4"
     document.getElementById("interviewThore").loop = true;
@@ -156,12 +157,12 @@ navneskilt();
 // SKift af indhold ved klik på person (Thore)
 
 function thoreFunction() {
- // Bestemmer navnet som følger ned langs siden
-  document.getElementById("navneskilt").innerHTML = "Thore";
+  // Bestemmer navnet som følger ned langs siden
+  document.getElementById("navneskilt").innerHTML = "Tores <br> Historie";
   // Ændre teksten i "sig ja" paragraphen
-  document.getElementById("tekstJa").innerHTML = "<bold>&quot</bold> Jeg siger ja til alt! <bold>&quot</bold>";
+  document.getElementById("tekstJa").innerHTML = "<b>&quot</b> Jeg er vant til at sige ja til alle de ting der bare sådan kommer, men en af de hårdere ting, som jeg ikke lige helt havde tænkt over, er jo at man skal være på hele tiden.  <b>&quot</b>";
   // Ændre teksten i valgfags paragraphen
-  document.getElementById("tekstValgfag").innerHTML = "<bold>&quot</bold> Mit navn er Thore og jeg spiller elektronisk musik. Lo mollit anim id est laborum. <bold>&quot</bold>";
+  document.getElementById("tekstValgfag").innerHTML = "<b>&quot</b> Før jeg startede havde jeg ikke rigtig tænkt, at jeg ville tage elektronisk musik, men så vi fik info om det, så tænkte jeg, at det lød fedt, så det ville jeg gerne prøve. Det kunne nemlig være sjovt at lære nogle andre ting, som man ikke lige selv lærer. Jeg har også haft kigget på sløjd når det kommer, for det kunne være sjovt at prøve at bygge ting. <b>&quot</b>";
   // Ændre musik, alt efter valgfag
   document.getElementById('myaudio').src = 'audio/elektroniskmusik.mp3';
   // Skifte første valgfagsbillede
@@ -173,23 +174,34 @@ function thoreFunction() {
   document.getElementById("interviewThore").style.outline = "solid 1.5em #D8C11D";
   // Fjerne rammen fra Frans video
   document.getElementById("interviewFran").style.outline = "none";
+  document.getElementById("stregtop").style.display = "block";
+  document.getElementById("stregtopfran").style.display = "none";
 }
 
 // SKift af indhold ved klik på person (Francisca)
 // Se kommentarer for Thore
 
 function franFunction() {
-  document.getElementById("navneskilt").innerHTML = "Francisca";
-  document.getElementById("tekstJa").innerHTML = "Jeg Ikke ja til noget";
-  document.getElementById("tekstValgfag").innerHTML = "Mit navn er Francisca og jeg siger ikke ja";
+  document.getElementById("navneskilt").innerHTML = "Franciscas <br> Historie";
+  document.getElementById("tekstJa").innerHTML = "<b>&quot</b> Jeg gik også på efterskole sidste år, men jeg synes det har været nemmere med det sociale i år. Nemmere bare at gå hen og snakke med folk, i stedet for at være lidt bange for det. <b>&quot</b>";
+  document.getElementById("tekstValgfag").innerHTML = "<b>&quot</b> Jeg kendte ikke rigtig valgfagene før jeg kom, men det var ret svært at vælge, fordi der var ret mange gode valgfag. Jeg synes udeliv er ret fedt, hvor vi lærer at tænde bål selv, tager ned og ror og sådan noget. Det er også fedt med afrikansk dans og trommer på SDS, det er noget jeg godt kan lide, så det er sjovt! <b>&quot</b>";
   document.getElementById('myaudio').src = 'audio/eriksminde_lyd.mp3';
   document.getElementById("valgfag1").style.backgroundImage = "url(img/valgfag_sts.png)";
   document.getElementById("valgfag2").style.backgroundImage = "url(img/valgfag_sts.png)";
 
   document.getElementById("interviewThore").style.outline = "none";
   document.getElementById("interviewFran").style.outline = "solid 1.5em #D8C11D";
+  document.getElementById("stregtop").style.display = "none";
+  document.getElementById("stregtopfran").style.display = "block";
 }
 
+
+// Sig ja tekst
+function sigja() {
+  //var ja = document.getElementById("sigjatekst").innerHTML.charAt(0);
+  //allert (ja);
+  document.getElementById("sigjatext").style.transform = "translateY(2%)";
+}
 
 
 // Lyde til valgfag
